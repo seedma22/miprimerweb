@@ -1,0 +1,120 @@
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos para el menú desplegable en dispositivos móviles */
+@media screen and (max-width: 768px) {
+    #nav-links {
+        display: none;
+        background-color: #333;
+        text-align: center;
+        padding: 10px 0;
+        position: absolute;
+        top: 40px; /* Ajustar la posición del menú */
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    /* Estilos para el botón de menú */
+    #menu-button {
+        display: block; /* Mostrar el botón en dispositivos móviles */
+    }
+
+    /* Estilos para el botón de menú activo */
+    #menu-button.active + #nav-links {
+        display: block; /* Mostrar el menú desplegable al hacer clic en el botón */
+    }
+
+    /* Estilos adicionales para enlaces en el menú desplegable */
+    #nav-links li {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
+
+/* Ocultar el botón en dispositivos de escritorio */
+@media screen and (min-width: 769px) {
+    #menu-button {
+        display: none;
+    }
+}
+
+
+
+/* Estilos para el formulario vertical */
+.vertical-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Espacio reducido entre los elementos */
+.vertical-form label,
+.vertical-form input {
+    margin: 3px 0;
+}
+
+/* Estilos para el contenedor de imágenes */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 75vh; /* Ajustar la altura del contenedor */
+    background-color: #f0f0f0;
+}
+
+/* Estilos para las imágenes */
+.image-container img {
+    max-width: 75%; /* Asegurar que las imágenes no superen el ancho del contenedor */
+    margin: 10px; /* Espacio entre las imágenes */
+}
+
+
+/* Estilo para el reproductor de YouTube embebido */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   
+}
+
+/* Alineación y centrado del contenido en el <main> y <footer> */
+main, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    min-height: 200px;
+}
